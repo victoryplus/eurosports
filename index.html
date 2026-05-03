@@ -2,178 +2,456 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Cat Care Tips - Help Your Cat Live Happy</title>
-    <meta name="description" content="Practical cat care guide for beginners. Learn how to care for your cat with simple, easy-to-follow tips.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Euro Sports Zone • Live Streaming</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
     <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f9f9f9;
-        } 
-        header {
-            text-align: center;
-            padding: 30px 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0A1128 0%, #0F1A3A 50%, #1A2A4A 100%);
             color: white;
-            border-radius: 10px;
-            margin-bottom: 30px;
+            min-height: 100vh;
         }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
+        
+        .hero-bg {
+            background-image: url('allspoo.jpeg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            position: relative;
+            min-height: 100vh;
         }
-        .tagline {
-            font-size: 1.2rem;
-            opacity: 0.9;
+        
+        @media (max-width: 768px) {
+            .hero-bg {
+                background-size: contain;
+                background-color: #0A1128;
+                background-position: top center;
+            }
         }
-        .article {
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            margin-bottom: 25px;
+        
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(10,17,40,0.85) 0%, rgba(0,150,255,0.3) 100%);
+            z-index: 0;
         }
-        h2 {
-            color: #667eea;
-            border-bottom: 2px solid #f0f0f0;
-            padding-bottom: 10px;
-            margin-bottom: 15px;
+        .hero-content {
+            position: relative;
+            z-index: 1;
         }
-        h3 {
-            color: #764ba2;
-            margin: 15px 0 10px;
+        
+        .btn-euro {
+            background: linear-gradient(135deg, #00B4D8 0%, #0077B6 100%);
+            border: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 180, 216, 0.3);
         }
-        ul, ol {
-            padding-left: 20px;
-            margin: 15px 0;
+        .btn-euro:hover {
+            transform: translateY(-2px);
+            background: linear-gradient(135deg, #48CAE4 0%, #0096C7 100%);
+            box-shadow: 0 10px 30px rgba(0, 180, 216, 0.5);
         }
-        li {
-            margin-bottom: 8px;
+        
+        .text-cyan {
+            color: #00B4D8;
         }
-        .tip {
-            background: #f0f7ff;
-            border-left: 4px solid #667eea;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 0 5px 5px 0;
+        
+        .card-euro {
+            background: rgba(10, 17, 40, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(0, 180, 216, 0.3);
+            border-radius: 20px;
         }
-        .ad-placeholder {
-            background: #f5f5f5;
-            border: 2px dashed #ccc;
-            padding: 20px;
+        
+        .banner-container {
             text-align: center;
-            margin: 25px 0;
-            border-radius: 5px;
-            color: #666;
+            margin: 20px auto;
+            padding: 8px 0;
+            clear: both;
+            overflow: hidden;
         }
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            padding: 20px;
-            color: #666;
-            border-top: 1px solid #eee;
+        
+        .banner-label {
+            font-size: 9px;
+            color: rgba(255,255,255,0.4);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 6px;
         }
-        @media (max-width: 600px) {
-            body { padding: 15px; }
-            h1 { font-size: 2rem; }
-            .article { padding: 20px; }
+        
+        .banner-container iframe,
+        .banner-container img,
+        .banner-container ins {
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+        
+        @keyframes pulse-cyan {
+            0%, 100% { opacity: 0.6; }
+            50% { opacity: 1; }
+        }
+        .live-badge {
+            animation: pulse-cyan 1.5s infinite;
+        }
+        
+        .feature-text {
+            line-height: 1.8;
+        }
+        
+        .stat-card {
+            background: rgba(0, 180, 216, 0.1);
+            border: 1px solid rgba(0, 180, 216, 0.3);
+            transition: all 0.3s ease;
+        }
+        .stat-card:hover {
+            background: rgba(0, 180, 216, 0.2);
+            border-color: #00B4D8;
+        }
+        
+        .league-card, .sport-card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: all 0.3s ease;
+        }
+        .league-card:hover, .sport-card:hover {
+            background: rgba(0, 180, 216, 0.15);
+            border-color: #00B4D8;
+            transform: translateY(-2px);
+        }
+        
+        /* Biar link card tidak ada underline */
+        .sport-card {
+            text-decoration: none;
+            color: inherit;
+            display: block;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>🐱 Simple Cat Care Tips</h1>
-        <p class="tagline">Easy-to-follow advice for new cat owners</p>
-    </header>
 
-    <div class="article">
-        <h2>How to Calm a Scared Kitten</h2>
-        <p>When bringing home a new kitten, they're often frightened. Here's how to help them adjust:</p>
-        
-        <div class="tip">
-            <h3>🛑 Do's:</h3>
-            <ul>
-                <li>Give them a small, quiet room first (bathroom or spare room)</li>
-                <li>Provide hiding spots like boxes or covered beds</li>
-                <li>Use Feliway or calming pheromone sprays</li>
-                <li>Speak in soft, gentle tones</li>
-            </ul>
+    <div class="hero-bg flex items-center justify-center">
+        <div class="hero-content text-center px-4 py-16 max-w-4xl mx-auto">
+            
+            <div class="mb-8">
+                <div class="inline-block px-4 py-1 rounded-full bg-cyan-500/20 border border-cyan-500/30 text-cyan-300 text-xs font-bold mb-4 live-badge">
+                    🌍 LIVE • ALL-SPORT • 4K
+                </div>
+                <h1 class="text-5xl md:text-7xl font-black mb-4 tracking-wider">
+                    EURO <span class="text-cyan">SPORTS</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto">
+                    Watch every match. Every sport. Every league. <span class="text-cyan font-bold">One platform.</span>
+                </p>
+            </div>
+            
+            <!-- BANNER #1 -->
+            <div class="banner-container">
+                <div class="banner-label">Advertisement</div>
+                <div id="banner-top">
+                    <script>
+  atOptions = {
+    'key' : '85ce87d2c92503775761ed4fff3dfb99',
+    'format' : 'iframe',
+    'height' : 50,
+    'width' : 320,
+    'params' : {}
+  };
+</script>
+<script src="https://encouragementglutton.com/85ce87d2c92503775761ed4fff3dfb99/invoke.js"></script>
+
+                </div>
+            </div>
+            
+            <!-- COUNTDOWN -->
+            <div class="max-w-md mx-auto card-euro p-6 mb-8">
+                <p class="text-gray-400 text-sm mb-2">⚽ NEXT BIG MATCH</p>
+                <div class="flex justify-center gap-6 text-3xl font-bold mb-2">
+                    <div><span id="hours" class="text-cyan">24</span><span class="text-xs block">HOURS</span></div>
+                    <div class="text-cyan">:</div>
+                    <div><span id="minutes" class="text-cyan">59</span><span class="text-xs block">MIN</span></div>
+                    <div class="text-cyan">:</div>
+                    <div><span id="seconds" class="text-cyan">59</span><span class="text-xs block">SEC</span></div>
+                </div>
+                <p class="text-sm text-gray-400">Playoffs • Premier League • Rugby</p>
+            </div>
+            
+            <!-- TOMBOL LOGIN & REGISTER -->
+            <div class="flex flex-col sm:flex-row justify-center gap-4 mb-6">
+                <a href="https://encouragementglutton.com/s39197pa43?key=f132dc8786265785a27bbdb37efd062e" class="btn-euro px-8 py-3 rounded-full text-white font-semibold text-lg shadow-lg transition-all duration-300 hover:scale-105">
+                    🔐 LOGIN
+                </a>
+                <a href="https://encouragementglutton.com/s39197pa43?key=f132dc8786265785a27bbdb37efd062e" class="btn-euro px-8 py-3 rounded-full text-white font-semibold text-lg shadow-lg transition-all duration-300 hover:scale-105">
+                    ✨ REGISTER FREE →
+                </a>
+            </div>
+            
+            <!-- BANNER #2 & #3 -->
+            <div class="banner-container">
+                <div class="banner-label">Advertisement</div>
+                <div id="banner-middle-1">
+                   <script>
+  atOptions = {
+    'key' : '7ffb0c3b2b0210b9ad12988a220bd904',
+    'format' : 'iframe',
+    'height' : 90,
+    'width' : 728,
+    'params' : {}
+  };
+</script>
+<script src="https://encouragementglutton.com/7ffb0c3b2b0210b9ad12988a220bd904/invoke.js"></script>
+
+                </div>
+            </div>
+            <div class="banner-container">
+                <div class="banner-label">Advertisement</div>
+                <div id="banner-middle-2">
+                    <script>
+  atOptions = {
+    'key' : '85ce87d2c92503775761ed4fff3dfb99',
+    'format' : 'iframe',
+    'height' : 50,
+    'width' : 320,
+    'params' : {}
+  };
+</script>
+<script src="https://encouragementglutton.com/85ce87d2c92503775761ed4fff3dfb99/invoke.js"></script>
+
+                </div>
+            </div>
+            
+            <p class="text-gray-500 text-xs mt-4">No credit card • Instant access • Cancel anytime</p>
         </div>
-        
-        <div class="tip">
-            <h3>❌ Don'ts:</h3>
-            <ul>
-                <li>Don't force interaction - let them come to you</li>
-                <li>Don't introduce to other pets immediately</li>
-                <li>Don't play loud music or TV</li>
-                <li>Don't punish fearful behavior</li>
-            </ul>
+    </div>
+
+    <!-- STATS -->
+    <div class="max-w-6xl mx-auto px-4 py-16">
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+            <div class="stat-card p-4 rounded-xl text-center">
+                <div class="text-3xl mb-2">⚽</div>
+                <p class="font-bold text-xl">30+</p>
+                <p class="text-xs text-gray-400">Leagues</p>
+            </div>
+            <div class="stat-card p-4 rounded-xl text-center">
+                <div class="text-3xl mb-2">🏆</div>
+                <p class="font-bold text-xl">1000+</p>
+                <p class="text-xs text-gray-400">Live Events/Season</p>
+            </div>
+            <div class="stat-card p-4 rounded-xl text-center">
+                <div class="text-3xl mb-2">📺</div>
+                <p class="font-bold text-xl">4K</p>
+                <p class="text-xs text-gray-400">Ultra HD</p>
+            </div>
+            <div class="stat-card p-4 rounded-xl text-center">
+                <div class="text-3xl mb-2">🌍</div>
+                <p class="font-bold text-xl">50+</p>
+                <p class="text-xs text-gray-400">Countries</p>
+            </div>
+            <div class="stat-card p-4 rounded-xl text-center">
+                <div class="text-3xl mb-2">⚡</div>
+                <p class="font-bold text-xl">0</p>
+                <p class="text-xs text-gray-400">Buffering</p>
+            </div>
         </div>
     </div>
 
-    <div class="ad-placeholder">
-        <!-- Adsterra Ad will go here -->
-        AD SPOT: 300x250 Banner
+    <!-- PREMIUM LEAGUES (Sepak Bola) -->
+    <div class="max-w-6xl mx-auto px-4 pb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-center mb-8">
+            ⚽ <span class="text-cyan">PREMIUM LEAGUES</span> (Soccer)
+        </h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+            <a href="https://encouragementglutton.com/s39197pa43?key=f132dc8786265785a27bbdb37efd062e" class="league-card p-4 rounded-xl block" style="text-decoration: none; color: inherit;">
+                <p class="font-bold">🏴󠁧󠁢󠁥󠁮󠁧󠁿 Premier League</p>
+                <p class="text-xs text-gray-400">England</p>
+            </a>
+            <a href="https://encouragementglutton.com/s39197pa43?key=f132dc8786265785a27bbdb37efd062e" class="league-card p-4 rounded-xl block" style="text-decoration: none; color: inherit;">
+                <p class="font-bold">🇪🇸 La Liga</p>
+                <p class="text-xs text-gray-400">Spain</p>
+            </a>
+            <a href="https://encouragementglutton.com/s39197pa43?key=f132dc8786265785a27bbdb37efd062e" class="league-card p-4 rounded-xl block" style="text-decoration: none; color: inherit;">
+                <p class="font-bold">🇮🇹 Serie A</p>
+                <p class="text-xs text-gray-400">Italy</p>
+            </a>
+            <a href="https://encouragementglutton.com/s39197pa43?key=f132dc8786265785a27bbdb37efd062e" class="league-card p-4 rounded-xl block" style="text-decoration: none; color: inherit;">
+                <p class="font-bold">🇩🇪 Bundesliga</p>
+                <p class="text-xs text-gray-400">Germany</p>
+            </a>
+            <a href="https://encouragementglutton.com/s39197pa43?key=f132dc8786265785a27bbdb37efd062e" class="league-card p-4 rounded-xl block" style="text-decoration: none; color: inherit;">
+                <p class="font-bold">🇫🇷 Ligue 1</p>
+                <p class="text-xs text-gray-400">France</p>
+            </a>
+            <a href="https://encouragementglutton.com/s39197pa43?key=f132dc8786265785a27bbdb37efd062e" class="league-card p-4 rounded-xl block" style="text-decoration: none; color: inherit;">
+                <p class="font-bold">🏆 Champions League</p>
+                <p class="text-xs text-gray-400">Europe</p>
+            </a>
+            <a href="https://encouragementglutton.com/s39197pa43?key=f132dc8786265785a27bbdb37efd062e" class="league-card p-4 rounded-xl block" style="text-decoration: none; color: inherit;">
+                <p class="font-bold">🇳🇱 Eredivisie</p>
+                <p class="text-xs text-gray-400">Netherlands</p>
+            </a>
+            <a href="https://encouragementglutton.com/s39197pa43?key=f132dc8786265785a27bbdb37efd062e" class="league-card p-4 rounded-xl block" style="text-decoration: none; color: inherit;">
+                <p class="font-bold">🇵🇹 Primeira Liga</p>
+                <p class="text-xs text-gray-400">Portugal</p>
+            </a>
+        </div>
     </div>
 
-    <div class="article">
-        <h2>5 Signs Your Cat is Healthy & Happy</h2>
-        
-        <h3>1. Good Appetite and Hydration</h3>
-        <p>Your cat should eat regularly and drink water. Wet food helps with hydration.</p>
-        
-        <h3>2. Clean, Shiny Coat</h3>
-        <p>Healthy cats groom themselves. Dull fur might indicate health issues.</p>
-        
-        <h3>3. Playful Behavior</h3>
-        <p>Even adult cats should play daily. Lack of play can signal depression.</p>
-        
-        <h3>4. Regular Litter Box Habits</h3>
-        <p>Consistent bathroom habits with no straining or accidents.</p>
-        
-        <h3>5. Bright, Clear Eyes</h3>
-        <p>No discharge, squinting, or cloudiness.</p>
+    <!-- ALL SPORTS (Setiap Icon Bisa DIKLIK) -->
+    <div class="max-w-6xl mx-auto px-4 pb-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-center mb-8">
+            🏅 <span class="text-cyan">ALL SPORTS</span> COVERED
+        </h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+            
+            <a href="https://encouragementglutton.com/s39197pa43?key=f132dc8786265785a27bbdb37efd062e" class="sport-card p-4 rounded-xl block">
+                <div class="text-3xl mb-2">⚽</div>
+                <p class="font-bold text-sm">Football (Soccer)</p>
+                <p class="text-xs text-gray-400">Premier League, UCL, La Liga</p>
+            </a>
+            
+            <a href="https://encouragementglutton.com/s39197pa43?key=f132dc8786265785a27bbdb37efd062e" class="sport-card p-4 rounded-xl block">
+                <div class="text-3xl mb-2">🏀</div>
+                <p class="font-bold text-sm">Basketball</p>
+                <p class="text-xs text-gray-400">EuroLeague, ACB, LBA</p>
+            </a>
+            
+            <a href="https://encouragementglutton.com/s39197pa43?key=f132dc8786265785a27bbdb37efd062e" class="sport-card p-4 rounded-xl block">
+                <div class="text-3xl mb-2">🎾</div>
+                <p class="font-bold text-sm">Tennis</p>
+                <p class="text-xs text-gray-400">Roland Garros, Wimbledon</p>
+            </a>
+            
+            <a href="https://encouragementglutton.com/s39197pa43?key=f132dc8786265785a27bbdb37efd062e" class="sport-card p-4 rounded-xl block">
+                <div class="text-3xl mb-2">🏉</div>
+                <p class="font-bold text-sm">Rugby</p>
+                <p class="text-xs text-gray-400">Six Nations, Top 14</p>
+            </a>
+            
+            <a href="https://encouragementglutton.com/s39197pa43?key=f132dc8786265785a27bbdb37efd062e" class="sport-card p-4 rounded-xl block">
+                <div class="text-3xl mb-2">🏒</div>
+                <p class="font-bold text-sm">Ice Hockey</p>
+                <p class="text-xs text-gray-400">SHL, Liiga, DEL, NL</p>
+            </a>
+            
+            <a href="https://encouragementglutton.com/s39197pa43?key=f132dc8786265785a27bbdb37efd062e" class="sport-card p-4 rounded-xl block">
+                <div class="text-3xl mb-2">🤾</div>
+                <p class="font-bold text-sm">Handball</p>
+                <p class="text-xs text-gray-400">Bundesliga, EHF CL</p>
+            </a>
+            
+            <a href="https://encouragementglutton.com/s39197pa43?key=f132dc8786265785a27bbdb37efd062e" class="sport-card p-4 rounded-xl block">
+                <div class="text-3xl mb-2">🚴</div>
+                <p class="font-bold text-sm">Cycling</p>
+                <p class="text-xs text-gray-400">Tour de France, Giro, Vuelta</p>
+            </a>
+            
+            <a href="https://encouragementglutton.com/s39197pa43?key=f132dc8786265785a27bbdb37efd062e" class="sport-card p-4 rounded-xl block">
+                <div class="text-3xl mb-2">🏌️</div>
+                <p class="font-bold text-sm">Golf</p>
+                <p class="text-xs text-gray-400">The Open, Ryder Cup</p>
+            </a>
+            
+            <a href="https://encouragementglutton.com/s39197pa43?key=f132dc8786265785a27bbdb37efd062e" class="sport-card p-4 rounded-xl block">
+                <div class="text-3xl mb-2">🏊</div>
+                <p class="font-bold text-sm">Aquatics</p>
+                <p class="text-xs text-gray-400">Swimming, Water Polo</p>
+            </a>
+            
+            <a href="https://encouragementglutton.com/s39197pa43?key=f132dc8786265785a27bbdb37efd062e" class="sport-card p-4 rounded-xl block">
+                <div class="text-3xl mb-2">🏎️</div>
+                <p class="font-bold text-sm">Motorsports</p>
+                <p class="text-xs text-gray-400">F1, MotoGP, WRC</p>
+            </a>
+            
+            <a href="https://encouragementglutton.com/s39197pa43?key=f132dc8786265785a27bbdb37efd062e" class="sport-card p-4 rounded-xl block">
+                <div class="text-3xl mb-2">🏑</div>
+                <p class="font-bold text-sm">Field Hockey</p>
+                <p class="text-xs text-gray-400">Euro Hockey League</p>
+            </a>
+            
+            <a href="https://encouragementglutton.com/s39197pa43?key=f132dc8786265785a27bbdb37efd062e" class="sport-card p-4 rounded-xl block">
+                <div class="text-3xl mb-2">🥊</div>
+                <p class="font-bold text-sm">Boxing</p>
+                <p class="text-xs text-gray-400">World Title Fights</p>
+            </a>
+            
+        </div>
     </div>
 
-    <div class="article">
-        <h2>Quick Emergency Checklist</h2>
-        <p>If your cat shows these symptoms, contact a vet immediately:</p>
-        <ul>
-            <li>⚠️ Not eating or drinking for 24+ hours</li>
-            <li>⚠️ Difficulty breathing or panting</li>
-            <li>⚠️ Repeated vomiting or diarrhea</li>
-            <li>⚠️ Unable to urinate (emergency!)</li>
-            <li>⚠️ Seizures or collapse</li>
-        </ul>
+    <!-- PROMO CONTENT -->
+    <div class="max-w-4xl mx-auto px-4 pb-16">
+        <div class="card-euro p-8 md:p-12 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                🎯 <span class="text-cyan">FREE</span> Premium Access — Limited Time
+            </h2>
+            <div class="space-y-6 text-gray-300 feature-text text-left md:text-center">
+                <p>⚽🏀🎾 <strong class="text-white">Watch EVERY sport</strong> — Football, Basketball, Tennis, Rugby, Hockey, Handball, Cycling, Golf, Aquatics, Motorsports, and more!</p>
+                <p>📱 <strong class="text-white">Stream on any device</strong> — TV, laptop, tablet, or smartphone</p>
+                <p>🎙️ <strong class="text-white">Expert analysis</strong> • Real-time stats • Instant replays • Multi-language</p>
+                <div class="bg-cyan-500/10 border border-cyan-500/30 rounded-xl p-6 mt-8">
+                    <p class="text-xl font-semibold">🔥 <strong class="text-cyan">EUROPEAN OFFER</strong> — 100% Free Trial Today</p>
+                    <p class="text-sm text-gray-300 mt-2">Click any sport above to start watching instantly!</p>
+                    <p class="text-xs text-gray-400 mt-3">✅ No card needed • ✅ Cancel anytime • ✅ Multi-language support</p>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <!-- Pop-under ad placeholder -->
-    <div style="display: none;">
-        <!-- Pop-under code will go here -->
-    </div>
-
-    <footer>
-        <p>© 2023 Simple Cat Care Tips | Updated daily with new advice</p>
-        <p>For educational purposes only. Always consult a veterinarian for medical advice.</p>
+    <!-- FOOTER -->
+    <footer class="border-t border-cyan-500/20 mt-8 py-8 text-center text-gray-500 text-xs">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="hover:text-cyan">Terms</a>
+                <a href="#" class="hover:text-cyan">Privacy</a>
+                <a href="#" class="hover:text-cyan">Contact</a>
+            </div>
+            <p>&copy; 2026 Euro Sports Zone • All major leagues & sports covered</p>
+            <p class="mt-1">18+ | Geo-restrictions may apply</p>
+        </div>
     </footer>
 
+    <!-- COUNTDOWN SCRIPT -->
     <script>
-        // Simple visitor counter
-        if (localStorage.getItem('visits')) {
-            let visits = parseInt(localStorage.getItem('visits')) + 1;
-            localStorage.setItem('visits', visits);
-        } else {
-            localStorage.setItem('visits', 1);
+        function startCountdown() {
+            const endTime = new Date().getTime() + (24 * 60 * 60 * 1000);
+            const timer = setInterval(() => {
+                const now = new Date().getTime();
+                const distance = endTime - now;
+                if (distance < 0) {
+                    clearInterval(timer);
+                    document.getElementById('hours').innerText = '00';
+                    document.getElementById('minutes').innerText = '00';
+                    document.getElementById('seconds').innerText = '00';
+                    return;
+                }
+                document.getElementById('hours').innerText = Math.floor(distance / (1000 * 60 * 60)).toString().padStart(2, '0');
+                document.getElementById('minutes').innerText = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)).toString().padStart(2, '0');
+                document.getElementById('seconds').innerText = Math.floor((distance % (1000 * 60)) / 1000).toString().padStart(2, '0');
+            }, 1000);
         }
-        
-        // Console log for debugging
-        console.log('Cat Tips site loaded successfully!');
+        document.addEventListener('DOMContentLoaded', startCountdown);
     </script>
+  <!-- Histats.com  (div with counter) --><div id="histats_counter"></div>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,5023630,4,22,130,30,00011111']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?5023630&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
 </body>
 </html>

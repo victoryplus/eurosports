@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script>(function(s){s.dataset.zone='10940521',s.src='https://nap5k.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
+    <script src="https://encouragementglutton.com/79/6d/3e/796d3eed2db65c294beb1b3e99cefb98.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>FIFA TV | Live Stream</title>
+    <title>Soccer TV | Live Stream</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Montserrat (Ultra Bold) & Plus Jakarta Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,900&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
         tailwind.config = {
@@ -19,101 +22,333 @@
                         montserrat: ['Montserrat', 'sans-serif'],
                     },
                     colors: {
-                        hsRed: '#ff0000',
-                        hsRedHover: '#cc0000',
-                        hsGreen: '#00c853',
-                        hsGreenHover: '#00a844',
-                        fifaBlue: '#326295',
-                        darkBg: '#0a0a0a',
-                        darkCard: '#141414',
+                        fifaBlue: '#002f6c',
+                        fifaBlueHover: '#001f4d',
+                        fifaLightBlue: '#0084ff',
+                        fifaGold: '#d4af37',
+                        fifaGoldHover: '#aa8c2c',
+                        darkBg: '#020617',
+                        darkCard: '#0f172a',
                     }
                 }
             }
         }
     </script>
     <style>
-        .header-compressed-text { font-family: 'Montserrat', sans-serif; font-weight: 900; letter-spacing: -0.05em; }
-        @keyframes scrollBadges { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
-        .animate-scroll-badges { animation: scrollBadges 25s linear infinite; }
+        /* Typography header khas FIFA TV */
+        .header-compressed-text {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            letter-spacing: -0.03em;
+        }
+        /* Seeker bar progress styling */
+        .seeker-progress {
+            width: 35%;
+        }
     </style>
 </head>
-<body class="bg-black text-white font-sans overflow-x-hidden min-h-screen">
+<body class="bg-darkBg text-white font-sans overflow-x-hidden min-h-screen pb-safe">
 
-    <!-- === 1. TOP MARQUEE === -->
-    <div class="w-full bg-fifaBlue overflow-hidden py-2 border-b border-white/20">
-        <div class="flex whitespace-nowrap animate-scroll-badges items-center space-x-12">
-            <div class="flex items-center space-x-12 text-sm font-black tracking-widest text-white uppercase">
-                <span>FIFA TV</span> <span>FIFA TV</span> <span>FIFA TV</span> <span>FIFA TV</span> <span>FIFA TV</span>
-            </div>
-        </div>
-    </div>
-
-    <!-- === 2. NAVIGATION BAR === -->
-    <nav class="w-full bg-[#0a0a0a] py-5 border-b border-white/10">
-        <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
-            <div class="flex items-center space-x-3">
-                <div class="bg-blue-600 text-white font-montserrat font-black text-[10px] px-2 py-0.5 rounded shadow-[0_0_10px_rgba(37,99,235,0.5)]">OFFICIAL</div>
-                <span class="font-montserrat font-black text-xl md:text-2xl tracking-tighter uppercase text-white">FIFA <span class="text-blue-500">LIVE</span></span>
-            </div>
-            <a href="https://omg10.com/4/10945293" class="px-8 py-2.5 bg-white text-black hover:bg-gray-200 font-bold text-sm rounded-full transition-all shadow-lg">
-                Login
-            </a>
-        </div>
-    </nav>
-
-    <!-- === 3. PLAYER SECTION === -->
-    <section class="max-w-5xl mx-auto px-4 pt-12">
-        
-        <div class="w-full bg-black rounded-xl overflow-hidden border border-white/10 shadow-2xl">
-            <div class="relative w-full aspect-video flex flex-col items-center justify-center p-8" 
-                 style="background-image: url('fifaa.jpg'); background-size: cover; background-position: center;">
-                <div class="absolute inset-0 bg-black/70"></div> 
-                <div class="relative z-10 max-w-lg text-center">
-                    <h3 class="text-xl font-bold text-white">Official Live Broadcast</h3>
-                    <p class="text-gray-300 mt-2 text-sm mb-6">Exclusive access to watch global matches in real-time.</p>
-                    <a href="https://omg10.com/4/10945293" class="px-8 py-3 bg-hsGreen hover:bg-hsGreenHover text-white font-black uppercase rounded-lg transition-all inline-block">
-                        WATCH NOW
-                    </a>
+    <!-- === 1. HERO BILLBOARD BANNER === -->
+    <section class="bg-gradient-to-r from-[#011627] to-[#012a4a] border-b-2 border-fifaLightBlue py-8 sm:py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                
+                <!-- Sisi Kiri: Status Live & Judul Slogan Besar -->
+                <div class="flex items-center space-x-4 sm:space-x-6 text-center md:text-left">
+                    <!-- Indikator Bulat Live Biru Menyala -->
+                    <div class="bg-fifaLightBlue text-white font-montserrat font-black tracking-widest text-xs sm:text-sm px-4 py-2 rounded-md flex items-center shrink-0">
+                        <span class="w-2.5 h-2.5 bg-white rounded-full mr-2 animate-ping"></span>
+                        LIVE
+                    </div>
+                    <!-- Judul Utama -->
+                    <h2 class="header-compressed-text text-2xl sm:text-3xl lg:text-4xl text-white tracking-tight leading-none uppercase">
+                        WATCH LIVE SOCCER <br class="hidden sm:inline">
+                    </h2>
                 </div>
-            </div>
-            <a href="https://omg10.com/4/10945293" class="w-full bg-blue-600 py-4 flex items-center justify-center hover:bg-blue-700 transition-colors">
-                <span class="font-bold text-xs uppercase tracking-widest">WATCH LIVE FOR FREE GAME TODAY</span>
-            </a>
-        </div>
 
-        <!-- Icons Section -->
-        <div class="grid grid-cols-3 gap-4 mt-8 text-center">
-            <div class="flex flex-col items-center p-3 bg-white/5 rounded-lg border border-white/5">
-                <i data-lucide="monitor" class="w-6 h-6 text-blue-400 mb-2"></i>
-                <span class="text-xs font-bold uppercase">Full HD</span>
-                <span class="text-[10px] text-gray-400 mt-1">Crystal Clear</span>
-            </div>
-            <div class="flex flex-col items-center p-3 bg-white/5 rounded-lg border border-white/5">
-                <i data-lucide="shield-check" class="w-6 h-6 text-blue-400 mb-2"></i>
-                <span class="text-xs font-bold uppercase">Secure</span>
-                <span class="text-[10px] text-gray-400 mt-1">Trusted Platform</span>
-            </div>
-            <div class="flex flex-col items-center p-3 bg-white/5 rounded-lg border border-white/5">
-                <i data-lucide="zap" class="w-6 h-6 text-blue-400 mb-2"></i>
-                <span class="text-xs font-bold uppercase">Fast</span>
-                <span class="text-[10px] text-gray-400 mt-1">Zero Lag</span>
-            </div>
-        </div>
+                <!-- Sisi Kanan: Tombol Langganan & Masuk Bertumpuk -->
+                <div class="flex flex-col sm:flex-row md:flex-col gap-3 w-full sm:w-auto shrink-0">
+                    
+                    <!-- Tombol Subscribe langsung ke link -->
+                    <button onclick="bukaLink()" class="w-full sm:w-44 text-center py-2.5 bg-fifaLightBlue hover:bg-blue-600 text-white font-montserrat font-black text-xs uppercase tracking-wider rounded transition-all cursor-pointer">
+                        Subscribe Now
+                    </button>
+                    
+                    <!-- Tombol Log In langsung ke link -->
+                    <button onclick="bukaLink()" class="w-full sm:w-44 text-center py-2.5 border border-white text-white font-montserrat font-black text-xs uppercase tracking-wider rounded hover:bg-white/10 transition-all cursor-pointer">
+                        Log In
+                    </button>
 
-        <!-- Promo Image -->
-        <div class="mt-8 w-full">
-            <img src="all.jpg" 
-                 alt="Football Match" 
-                 class="w-full h-auto rounded-xl shadow-2xl border border-white/10 hover:opacity-90 transition-opacity">
+                </div>
+
+            </div>
         </div>
     </section>
 
-    <footer class="py-12 text-center text-xs text-gray-500">© 2026 FIFA TV Network. All rights reserved.</footer>
+    <!-- === 2. MEDIA PLAYER CONTAINER WITH REGISTER PAYWALL === -->
+    <section class="max-w-5xl mx-auto px-4 pt-8">
+        
+        <div class="w-full bg-black rounded-xl overflow-hidden border border-white/10 shadow-2xl flex flex-col">
+            
+            <!-- Video Screen dengan Aspect Ratio Tetap (16:9) -->
+            <div class="relative w-full aspect-video flex flex-col items-center justify-center p-4 sm:p-8 text-center select-none overflow-hidden bg-neutral-950">
+                
+                <div class="absolute inset-0 z-0">
+                    <!-- Background sepak bola premium berorientasi FIFA -->
+                    <img src="lap.jpg" 
+                         alt="FIFA Stadium Background" 
+                         class="w-full h-full object-cover object-center opacity-80 brightness-110">
+                    <div class="absolute inset-0 bg-black/20"></div>
+                </div>
 
+                <!-- Konten Tengah Pembatasan Akses (Paywall Gateway) -->
+                <div class="relative z-10 max-w-2xl flex flex-col items-center px-4">
+                    
+                    <!-- Teks di atas tombol pendaftaran gratis -->
+                    <h3 class="text-sm sm:text-xl lg:text-2xl font-bold text-gray-100 tracking-tight leading-relaxed max-w-xl">
+                        Watch live soccer matches, replays, highlights & world class documentaries for free. Stream soccer anytime, anywhere
+                    </h3>
+                    
+                    <!-- === TIMER LOADING STATE (3 DETIK) === -->
+                    <div id="playerTimer" class="mt-6 sm:mt-8 flex flex-col items-center space-y-3">
+                        <div class="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-fifaLightBlue"></div>
+                        <p class="text-xs sm:text-sm text-gray-300 font-semibold tracking-wide">
+                            Connecting to FIFA Live Server... Please wait <span id="countdownText" class="text-fifaLightBlue font-bold text-sm sm:text-lg">3</span>s
+                        </p>
+                    </div>
+
+                    <!-- Register Button (Muncul setelah 3 detik - Langsung ke Link) -->
+                    <button id="registerBtn" onclick="bukaLink()" class="hidden mt-6 sm:mt-8 px-8 py-3.5 sm:px-10 sm:py-4 bg-fifaLightBlue hover:bg-blue-600 text-white font-montserrat font-black tracking-wide text-xs sm:text-sm uppercase rounded-full transition-all hover:scale-105 active:scale-95 shadow-lg shadow-fifaLightBlue/30 cursor-pointer">
+                        CREATE A FREE ACCOUNT
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- === 3. MEDIA CONTROLS BAR === -->
+            <div class="w-full bg-[#0b0f19] border-t border-white/10 px-4 py-3.5 flex flex-row items-center justify-between gap-4">
+                <div class="flex items-center space-x-4 flex-grow">
+                    <button onclick="bukaLink()" class="text-gray-300 hover:text-white transition-colors cursor-pointer">
+                        <i data-lucide="play" class="w-4 h-4 fill-current"></i>
+                    </button>
+                    
+                    <!-- Seek bar juga klik ke link -->
+                    <div onclick="bukaLink()" class="flex-grow bg-gray-800 h-1.5 rounded-full relative overflow-hidden cursor-pointer">
+                        <div class="bg-fifaLightBlue h-full rounded-full seeker-progress"></div>
+                    </div>
+                </div>
+
+                <div class="flex items-center space-x-4 shrink-0">
+                    <div class="hidden sm:flex items-center space-x-2">
+                        <i data-lucide="volume-2" class="w-4 h-4 text-gray-400"></i>
+                        <div class="w-16 bg-gray-800 h-1 rounded-full overflow-hidden">
+                            <div class="bg-white h-full w-4/5"></div>
+                        </div>
+                    </div>
+                    <button onclick="bukaLink()" class="text-gray-400 hover:text-white transition-colors cursor-pointer">
+                        <i data-lucide="maximize" class="w-4 h-4"></i>
+                    </button>
+                    <div class="flex items-center text-[10px] font-bold text-fifaLightBlue uppercase tracking-widest bg-fifaLightBlue/10 px-2 py-0.5 rounded border border-fifaLightBlue/20">
+                        <span class="w-1.5 h-1.5 bg-fifaLightBlue rounded-full mr-1.5 animate-pulse"></span>
+                        LIVE FEED
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Banner di bawah video player langsung ke link -->
+        <button onclick="bukaLink()" class="w-full bg-fifaLightBlue hover:bg-blue-600 transition-colors py-3.5 flex items-center justify-center rounded-b-xl cursor-pointer shadow-lg shadow-fifaLightBlue/10 border-b border-x border-white/10 relative z-20">
+            <span class="font-montserrat font-black text-[10px] sm:text-xs text-white tracking-widest uppercase text-center px-4">START STREAMING MATCH LIVE IN ULTRA HD FOR FREE</span>
+        </button>
+    </section>
+
+    <!-- === 4. ADSTERRA BANNER ADS SPACE === -->
+    <section class="max-w-4xl mx-auto px-4 mt-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="w-full flex flex-col items-center justify-center min-h-[50px]">
+                <div class="text-[9px] text-gray-600 tracking-widest uppercase border border-dashed border-white/10 px-6 py-4 rounded-xl w-full text-center">
+<script>
+  atOptions = {
+    'key' : '85ce87d2c92503775761ed4fff3dfb99',
+    'format' : 'iframe',
+    'height' : 50,
+    'width' : 320,
+    'params' : {}
+  };
+</script>
+<script src="https://encouragementglutton.com/85ce87d2c92503775761ed4fff3dfb99/invoke.js"></script>
+                </div>
+            </div>
+            <div class="w-full flex flex-col items-center justify-center min-h-[50px]">
+                <div class="text-[9px] text-gray-600 tracking-widest uppercase border border-dashed border-white/10 px-6 py-4 rounded-xl w-full text-center">
+                 <script>
+  atOptions = {
+    'key' : '85ce87d2c92503775761ed4fff3dfb99',
+    'format' : 'iframe',
+    'height' : 50,
+    'width' : 320,
+    'params' : {}
+  };
+</script>
+<script src="https://encouragementglutton.com/85ce87d2c92503775761ed4fff3dfb99/invoke.js"></script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- === 5. SPESIFIKASI DAN KUALITAS JARINGAN === -->
+    <section class="max-w-5xl mx-auto px-4 py-12">
+        <div class="bg-darkCard border border-white/5 rounded-2xl p-6 sm:p-8">
+            <h3 class="text-center font-montserrat font-black text-lg sm:text-xl tracking-wider text-white uppercase mb-2">
+                EXCEPTIONAL STREAMING EXPERIENCE
+            </h3>
+            <p class="text-center text-xs sm:text-sm text-gray-400 mb-8 max-w-2xl mx-auto">
+                Discover why millions of fans choose our network to stream major global football events daily.
+            </p>
+
+            <!-- Grid Kualitas, Jaringan, dan Kemudahan Akses -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Kualitas Siaran Ultra HD -->
+                <div class="bg-black/40 border border-white/5 p-5 rounded-xl flex flex-col items-center text-center transition-all hover:border-fifaLightBlue/30">
+                    <div class="w-12 h-12 bg-fifaLightBlue/10 text-fifaLightBlue rounded-full flex items-center justify-center mb-4 border border-fifaLightBlue/20">
+                        <i data-lucide="tv-2" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="text-sm font-bold uppercase tracking-wide text-white mb-2">Ultra HD Quality</h4>
+                    <p class="text-[11px] sm:text-xs text-gray-400 leading-relaxed">
+                        Enjoy razor-sharp 4K and Full HD resolution with immersive spatial stadium sound.
+                    </p>
+                </div>
+
+                <!-- Jaringan Stabil & Latensi Rendah -->
+                <div class="bg-black/40 border border-white/5 p-5 rounded-xl flex flex-col items-center text-center transition-all hover:border-fifaLightBlue/30">
+                    <div class="w-12 h-12 bg-fifaLightBlue/10 text-fifaLightBlue rounded-full flex items-center justify-center mb-4 border border-fifaLightBlue/20">
+                        <i data-lucide="zap" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="text-sm font-bold uppercase tracking-wide text-white mb-2">Network Stability</h4>
+                    <p class="text-[11px] sm:text-xs text-gray-400 leading-relaxed">
+                        Backed by global CDN nodes to eliminate buffering and maintain less than 2s latency.
+                    </p>
+                </div>
+
+                <!-- Akses Mudah Sekali Klik -->
+                <div class="bg-black/40 border border-white/5 p-5 rounded-xl flex flex-col items-center text-center transition-all hover:border-fifaLightBlue/30">
+                    <div class="w-12 h-12 bg-fifaLightBlue/10 text-fifaLightBlue rounded-full flex items-center justify-center mb-4 border border-fifaLightBlue/20">
+                        <i data-lucide="shield-check" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="text-sm font-bold uppercase tracking-wide text-white mb-2">Easy Access</h4>
+                    <p class="text-[11px] sm:text-xs text-gray-400 leading-relaxed">
+                        No credit cards or complex subscriptions. Quick secure authentication to unlock feeds.
+                    </p>
+                </div>
+
+                <!-- Dukungan Multi-Device -->
+                <div class="bg-black/40 border border-white/5 p-5 rounded-xl flex flex-col items-center text-center transition-all hover:border-fifaLightBlue/30">
+                    <div class="w-12 h-12 bg-fifaLightBlue/10 text-fifaLightBlue rounded-full flex items-center justify-center mb-4 border border-fifaLightBlue/20">
+                        <i data-lucide="smartphone" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="text-sm font-bold uppercase tracking-wide text-white mb-2">Cross Platform</h4>
+                    <p class="text-[11px] sm:text-xs text-gray-400 leading-relaxed">
+                        Stream smoothly on your iPhone, Android, Tablet, Smart TV, or Laptop web browsers.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- === 6. AREA PROMOSI BANNER RESPONSIF === -->
+    <section class="max-w-5xl mx-auto px-4 pb-16">
+        <div class="w-full bg-darkCard border border-white/5 rounded-2xl overflow-hidden shadow-xl p-4 sm:p-6 text-center">
+            <h3 class="font-montserrat font-black text-sm sm:text-md tracking-wider text-gray-400 uppercase mb-4">
+                Exclusive FIFA Broadcast Coverage
+            </h3>
+            
+            <div class="relative w-full overflow-hidden rounded-xl border border-white/10 group bg-slate-950">
+                <img src="fifaa.jpg" 
+                     alt="FIFA World Tournament Banner" 
+                     class="w-full h-auto max-h-[350px] object-cover object-center transform transition-transform duration-700 group-hover:scale-105"
+                     onerror="this.src='https://images.unsplash.com/photo-1543351611-58f69d7c1781?q=80&w=1200&auto=format&fit=crop'">
+                <!-- Overlay gradasi mewah di atas gambar -->
+                <div class="absolute inset-0 bg-gradient-to-t from-darkBg via-transparent to-transparent opacity-60"></div>
+            </div>
+            
+            <div class="mt-4 flex flex-col sm:flex-row items-center justify-between gap-4 text-left px-2">
+                <div>
+                    <h4 class="text-md font-bold text-white uppercase tracking-tight">Stream All Major Continental Cups & Documentaries</h4>
+                    <p class="text-xs text-gray-400">Available globally on demand with multiple language commentary options.</p>
+                </div>
+                <button onclick="bukaLink()" class="px-6 py-2.5 bg-fifaLightBlue hover:bg-blue-600 text-white font-montserrat font-black rounded-lg transition-all text-xs tracking-wider uppercase whitespace-nowrap cursor-pointer">
+                    Join FIFA+ Free
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#030712] border-t border-white/5 py-12 pb-safe-bottom">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-xs text-gray-500">&copy; 2026 FIFA TV Broadcasting Network. All copyrights and registered trademarks are protected by law.</p>
+        </div>
+    </footer>
+
+    <!-- === 7. REAL-TIME USERS ONLINE BADGE === -->
+    <div class="fixed bottom-4 right-4 z-50 bg-black/95 border border-white/10 px-4 py-2.5 rounded-lg shadow-2xl flex items-center space-x-2 select-none">
+        <span class="relative flex h-2.5 w-2.5">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
+        </span>
+        <span class="text-[10px] sm:text-xs font-bold text-gray-200">
+            <span id="userCount">14258</span> Users Online Now
+        </span>
+    </div>
+
+    <!-- MAIN CONTROL SCRIPTS -->
     <script>
+        // Load Lucide Icons
         lucide.createIcons();
+
+        // === [SET YOUR ADSTERRA DIRECT LINK HERE] ===
+        // Masukkan link Anda di antara tanda kutip di bawah ini
+        const directLink = "https://encouragementglutton.com/s39197pa43?key=f132dc8786265785a27bbdb37efd062e"; 
+
+        // Fungsi sederhana untuk membuka link di tab baru
+        function bukaLink() {
+            if(directLink) {
+                window.open(directLink, '_blank');
+            }
+        }
+
+        // === 3-SECOND SHIELD TIMER FOR REGISTER BUTTON ===
+        let timeLeft = 3; // Diubah dari 10 menjadi 3
+        const countdownText = document.getElementById('countdownText');
+        const playerTimer = document.getElementById('playerTimer');
+        const registerBtn = document.getElementById('registerBtn');
+
+        const countdownInterval = setInterval(() => {
+            timeLeft--;
+            if (countdownText) {
+                countdownText.innerText = timeLeft;
+            }
+            if (timeLeft <= 0) {
+                clearInterval(countdownInterval);
+                if (playerTimer) playerTimer.classList.add('hidden'); // Hide loading anim
+                if (registerBtn) registerBtn.classList.remove('hidden'); // Display register button
+            }
+        }, 1000);
+
+        // Dynamic Online User Count Simulation
+        setInterval(() => {
+            const countSpan = document.getElementById('userCount');
+            let currentCount = parseInt(countSpan.innerText);
+            const change = Math.floor(Math.random() * 11) - 5; // -5 to +5 range
+            countSpan.innerText = currentCount + change;
+        }, 3000);
     </script>
-     <!-- Histats.com  (div with counter) --><div id="histats_counter"></div>
+    <!-- Histats.com  (div with counter) --><div id="histats_counter"></div>
 <!-- Histats.com  START  (aync)-->
 <script type="text/javascript">var _Hasync= _Hasync|| [];
 _Hasync.push(['Histats.start', '1,5023630,4,22,130,30,00011111']);
